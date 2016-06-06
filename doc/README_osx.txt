@@ -1,4 +1,5 @@
 Deterministic OS X Dmg Notes.
+New release 2
 
 Working OS X DMGs are created in Linux by combining a recent clang,
 the Apple's binutils (ld, ar, etc), and DMG authoring tools.
