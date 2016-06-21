@@ -62,16 +62,13 @@ static Checkpoints::MapCheckpoints mapCheckpoints =
 		( 64, uint256("0xa32b7960e35ae2f9ef83a8b7507bc3fffc6959ef27c46ed4ebdbabf9e661375d"))
 		( 128, uint256("0x172d100cf86135d03da12936d3174b68beba7752bf208ee5eacfd44012cd066e"))
 		( 256, uint256("0xa83edd96dff905aab89680cf376d990f442bdc132df9b7d46f07046544f277c5"))
-		( 320, uint256("0xac3f4a4848c822e38eeb4d833b1302d44a91089179a996efbb9ea50336cb3487"))
-		( 256, uint256("0xa83edd96dff905aab89680cf376d990f442bdc132df9b7d46f07046544f277c5"))
 		( 512, uint256("0x01886cc19b158c46472c83829058c6e35f965f18aa5c1df66810f883e6aeb45f"))
-		( 640, uint256("0xe231c11c65df42ace83345c0aa13d87f73399c853dbdbf93f868399e06b263c1"))
-		( 700, uint256("0x23e1e416dfb233c4271dfd05b1c7c078099a6ec0dc36fbfa5a22014da157a340"))
+		( 1024, uint256("0xff3c7e6ef394ae25873417dded36a98bc9078b5ea8a4136bb6cdbe6030a62d17"))
         ;
 static const Checkpoints::CCheckpointData data = {
         &mapCheckpoints,
-        1466211039, // * UNIX timestamp of last checkpoint block b2dcbf8e530ed8934b2cdd21c95f801ea473e70225463940b4634e5c8232fd35
-        0,   // * total number of transactions between genesis and last checkpoint
+        1466291073, // * UNIX timestamp of last checkpoint block b2dcbf8e530ed8934b2cdd21c95f801ea473e70225463940b4634e5c8232fd35
+        1025,   // * total number of transactions between genesis and last checkpoint
                     //   (the tx=... number in the SetBestChain debug.log lines)
         5500.0     // * estimated number of transactions per day after checkpoint
     };
@@ -115,7 +112,7 @@ public:
         vAlertPubKey = ParseHex("043014c67b78f95c8964ba4f10bc83ce6dbee8d6afeb0570552e2f7562f83a5ae6cc937900545ab5c30a84565315d55107d5269e816c50e4080ca89dc2cc64e9c2");
         nDefaultPort = 9333;
         bnProofOfWorkLimit = ~uint256(0) >> 20;
-        nSubsidyHalvingInterval = 84000;
+        nSubsidyHalvingInterval = 210000;
         nEnforceBlockUpgradeMajority = 750;
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
