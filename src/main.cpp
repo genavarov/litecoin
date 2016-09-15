@@ -1244,32 +1244,32 @@ bool ReadBlockFromDisk(CBlock& block, const CBlockIndex* pindex)
 // miner's coin base reward based on nBits
 CAmount GetProofOfWorkReward(unsigned int nHeight)
 {
-        CAmount nSubsidy = 5000 * COIN;
+        CAmount nSubsidy = 50 * COIN;
 
 		if (nHeight < 2101)
-			nSubsidy = 5000 * COIN; // 10,500000 coins
+			nSubsidy = 50 * COIN; // 50 coins
 		else if (nHeight < 4201)
-			nSubsidy = 640 * COIN; // 1,344000 coins
+			nSubsidy = 50 * COIN; // 50 coins
 		else if (nHeight < 6301)
-			nSubsidy = 320 * COIN; // 0,672000 coins
+			nSubsidy = 50 * COIN; // 50 coins
 		else if (nHeight < 8401)
-			nSubsidy = 160 * COIN; // 0,336000 coins
+			nSubsidy = 50 * COIN; // 50 coins
 		else if (nHeight < 10501)
-			nSubsidy = 80 * COIN; // 0,168000 coins
+			nSubsidy = 50 * COIN; // 50 coins
 		else if (nHeight < 21001)
-			nSubsidy = 40 * COIN; // 0,420000 coins
+			nSubsidy = 50 * COIN; // 50 coins
 		else if (nHeight < 42001)
-			nSubsidy = 40 * COIN; // 0,840000 coins
+			nSubsidy = 50 * COIN; // 50 coins
 		else if (nHeight < 84001)
-			nSubsidy = 40 * COIN; // 1,680000 coins
+			nSubsidy = 50 * COIN; // 50 coins
 		else if (nHeight < 210001)
-			nSubsidy = 40 * COIN; // 5,040000 coins
+			nSubsidy = 50 * COIN; // 50 coins
 		else if (nHeight < 420001)
-			nSubsidy = 40 * COIN; // 40/2 = 20 coins
+			nSubsidy = 50 * COIN; // 50 coins
 		else if (nHeight < 840001)
-			nSubsidy = 40 * COIN; // 40/8 = 5 coins
+			nSubsidy = 50 * COIN; // 50 coins
 		else if (nHeight > 840000)
-			nSubsidy = 40 * COIN; // 2.50 coins per block
+			nSubsidy = 50 * COIN; // 50 coins per block
 
     	return nSubsidy;
 }
